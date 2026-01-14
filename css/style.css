@@ -995,7 +995,7 @@ h6 {
   z-index: 1;
 }
 .page--index .kv .topic {
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
 }
 .page--index .kv .topic .line1 {
@@ -1007,7 +1007,7 @@ h6 {
           align-items: center;
 }
 .page--index .kv .subTitle {
-  color: #FFFFFF;
+  color: #000000;
 }
 .page--index .kv .subTitle .line1 {
   width: 301px;
@@ -2675,7 +2675,7 @@ h6 {
     display: block;
     width: 25%;
     height: 1px;
-    background-color: #FFFFFF;
+    background-color: #787878;
   }
   .page--index .kv .container.is-pc .img-trust:before {
     margin-right: 24px;
