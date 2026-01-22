@@ -2504,8 +2504,16 @@ h6 {
   .section--record .recordList li:last-child {
     margin-right: 0;
   }
+  .section--record .passList {
+    max-width: 420px;
+    row-gap: 16px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    margin: 0 auto;
+  }
   .section--record .passList li {
-    margin: 0 20px 0;
+    margin: 0;
   }
   .section--tab .tab-select {
     position: relative;
