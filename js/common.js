@@ -31,14 +31,14 @@ $(document).ready(function() {
 	});
 
 	$('.brand-list').owlCarousel({
-	    loop: true,
+	    loop: false,
 	    margin: 0,
 	    nav: true,
 		navText: ['', ''],
-	    center: false,
+	    center: true,
 		smartSpeed: 200,
 		mouseDrag: false,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 4000,
 		autoplayHoverPause: false,
 	    responsive: {
