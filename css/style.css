@@ -2932,6 +2932,23 @@ h6 {
   .page--index .brand-list .owl-nav .owl-next {
     right: -40px;
   }
+  .page--index .brand-list.owl-center-few .owl-stage-outer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .page--index .brand-list.owl-center-few .owl-stage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    float: none !important;
+  }
   .page--award {
     padding-top: 82px;
   }

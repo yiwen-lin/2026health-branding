@@ -2557,6 +2557,19 @@ $chartCate_color:
 					right: -40px;
 				}
 			}
+
+			&.owl-center-few {
+				.owl-stage-outer {
+					display: flex;
+					justify-content: center;
+				}
+
+				.owl-stage {
+					display: flex;
+					justify-content: center;
+					float: none !important;
+				}
+			}
 		}
 	}
 

@@ -30,12 +30,22 @@ $(document).ready(function() {
 		autoplayHoverPause: false
 	});
 
-	$('.brand-list').owlCarousel({
-	    loop: false,
+	var $brandCarousel = $('.brand-list');
+	var brandCount = $brandCarousel.children().length;
+
+	function getBrandVisibleItems() {
+		var width = $(window).width();
+		if (width >= 1000) return 3;
+		if (width >= 600) return 2;
+		return 1;
+	}
+
+	$brandCarousel.owlCarousel({
+	    loop: brandCount>=4,
 	    margin: 0,
 	    nav: true,
 		navText: ['', ''],
-	    center: true,
+	    center: false,
 		smartSpeed: 200,
 		mouseDrag: false,
 		autoplay: false,
@@ -52,8 +62,19 @@ $(document).ready(function() {
 	            items: 3,
 				margin: 22
 	        }
-	    }
+	    },
+		onInitialized: checkBrandCenter,
+    	onResized: checkBrandCenter
 	});
+
+	function checkBrandCenter() {
+		var brandVisibleItems = getBrandVisibleItems();
+		if (brandCount < brandVisibleItems) {
+			$brandCarousel.addClass('owl-center-few');
+		} else {
+			$brandCarousel.removeClass('owl-center-few');
+		}
+	}
 
 	$("a[href^='#']").on('click', function(event) {
 
